@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		E040D5D01CC0DF0F00B99F25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D5CF1CC0DF0F00B99F25 /* main.m */; };
 		E040D5D31CC0DF0F00B99F25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D5D21CC0DF0F00B99F25 /* AppDelegate.m */; };
-		E040D5D61CC0DF0F00B99F25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D5D51CC0DF0F00B99F25 /* ViewController.m */; };
-		E040D5D91CC0DF0F00B99F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E040D5D71CC0DF0F00B99F25 /* Main.storyboard */; };
 		E040D5DB1CC0DF0F00B99F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E040D5DA1CC0DF0F00B99F25 /* Assets.xcassets */; };
 		E040D5DE1CC0DF0F00B99F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E040D5DC1CC0DF0F00B99F25 /* LaunchScreen.storyboard */; };
 		E040D64B1CC0E23100B99F25 /* TQPlayerBrightness.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6311CC0E23100B99F25 /* TQPlayerBrightness.m */; };
@@ -25,6 +23,7 @@
 		E040D6541CC0E23100B99F25 /* TQPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E040D6461CC0E23100B99F25 /* TQPlayer.bundle */; };
 		E040D6551CC0E23100B99F25 /* TQPlayerResources.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6481CC0E23100B99F25 /* TQPlayerResources.m */; };
 		E040D6561CC0E23100B99F25 /* TQPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D64A1CC0E23100B99F25 /* TQPlayer.m */; };
+		E040D6861CC154E100B99F25 /* ShowPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6851CC154E100B99F25 /* ShowPlayerViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,9 +31,6 @@
 		E040D5CF1CC0DF0F00B99F25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E040D5D11CC0DF0F00B99F25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		E040D5D21CC0DF0F00B99F25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		E040D5D41CC0DF0F00B99F25 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		E040D5D51CC0DF0F00B99F25 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		E040D5D81CC0DF0F00B99F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E040D5DA1CC0DF0F00B99F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E040D5DD1CC0DF0F00B99F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E040D5DF1CC0DF0F00B99F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -62,6 +58,8 @@
 		E040D6481CC0E23100B99F25 /* TQPlayerResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerResources.m; sourceTree = "<group>"; };
 		E040D6491CC0E23100B99F25 /* TQPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayer.h; sourceTree = "<group>"; };
 		E040D64A1CC0E23100B99F25 /* TQPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayer.m; sourceTree = "<group>"; };
+		E040D6841CC154E100B99F25 /* ShowPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPlayerViewController.h; sourceTree = "<group>"; };
+		E040D6851CC154E100B99F25 /* ShowPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPlayerViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +95,8 @@
 			children = (
 				E040D5D11CC0DF0F00B99F25 /* AppDelegate.h */,
 				E040D5D21CC0DF0F00B99F25 /* AppDelegate.m */,
-				E040D5D41CC0DF0F00B99F25 /* ViewController.h */,
-				E040D5D51CC0DF0F00B99F25 /* ViewController.m */,
-				E040D5D71CC0DF0F00B99F25 /* Main.storyboard */,
+				E040D6841CC154E100B99F25 /* ShowPlayerViewController.h */,
+				E040D6851CC154E100B99F25 /* ShowPlayerViewController.m */,
 				E040D5DA1CC0DF0F00B99F25 /* Assets.xcassets */,
 				E040D5DC1CC0DF0F00B99F25 /* LaunchScreen.storyboard */,
 				E040D5DF1CC0DF0F00B99F25 /* Info.plist */,
@@ -240,7 +237,6 @@
 				E040D5DE1CC0DF0F00B99F25 /* LaunchScreen.storyboard in Resources */,
 				E040D6541CC0E23100B99F25 /* TQPlayer.bundle in Resources */,
 				E040D5DB1CC0DF0F00B99F25 /* Assets.xcassets in Resources */,
-				E040D5D91CC0DF0F00B99F25 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,7 +247,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E040D5D61CC0DF0F00B99F25 /* ViewController.m in Sources */,
 				E040D6521CC0E23100B99F25 /* TQPlayerViewGestureRecognizer.m in Sources */,
 				E040D6551CC0E23100B99F25 /* TQPlayerResources.m in Sources */,
 				E040D5D31CC0DF0F00B99F25 /* AppDelegate.m in Sources */,
@@ -264,6 +259,7 @@
 				E040D5D01CC0DF0F00B99F25 /* main.m in Sources */,
 				E040D6531CC0E23100B99F25 /* TQPlayerWindow.m in Sources */,
 				E040D6511CC0E23100B99F25 /* TQPlayerViewController.m in Sources */,
+				E040D6861CC154E100B99F25 /* ShowPlayerViewController.m in Sources */,
 				E040D64D1CC0E23100B99F25 /* TQPlayerHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,14 +267,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		E040D5D71CC0DF0F00B99F25 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E040D5D81CC0DF0F00B99F25 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E040D5DC1CC0DF0F00B99F25 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

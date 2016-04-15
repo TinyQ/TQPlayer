@@ -93,7 +93,7 @@
     TQPlayerViewController *playerViewController = [self currentPlayerViewController];
     
     if (playerViewController) {
-        [playerViewController.playerView playURL:URL];
+        [playerViewController playURL:URL live:live];
     } else {
         TQPlayerViewController *viewController = [[TQPlayerViewController alloc] init];
         __weak typeof(self) weakSelf = self;

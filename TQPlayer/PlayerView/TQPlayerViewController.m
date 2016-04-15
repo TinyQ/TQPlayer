@@ -482,6 +482,10 @@
 }
 
 - (void)playerPanelSeekToProgress:(double)progress completionHandler:(void (^)(BOOL finished))completionHandler{
+    if (self.isLive) {
+        return;
+    }
+    
     if (self.playerView){
         Float64 scends = [self.playerView duration] * progress;
         [self.playerView seekToSeconds:scends completionHandler:completionHandler];
@@ -548,6 +552,9 @@
 }
 
 - (void)playerViewRecognizer:(TQPlayerViewGestureRecognizer *)recognizer fullScreenHorizontalTouchVariable:(float)variable recognizerState:(TQPlayerViewRecognizerState)state touching:(inout BOOL *)touching{
+    if (self.isLive) {
+        return;
+    }
     
     double seekTotleSeconds = 0;
     
