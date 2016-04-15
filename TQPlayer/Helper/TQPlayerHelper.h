@@ -30,6 +30,10 @@
 
 + (void)updateWindow:(UIWindow *)window toInterfaceOrientation:(UIInterfaceOrientation)orientation completion:(void (^)(BOOL finished))completion;
 
++ (void)updateWindow:(UIWindow *)window toInterfaceOrientation:(UIInterfaceOrientation)orientation duration:(double)duration force:(BOOL)force;
+
++ (void)updateWindow:(UIWindow *)window rotatableViewOrientation:(UIInterfaceOrientation)orientation updateStatusBar:(BOOL)updateStatusBar duration:(double)duration;
+
 + (UIView *)iOSAVPlayerView;
 
 + (BOOL)isShowiOSAVPlayerView;

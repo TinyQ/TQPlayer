@@ -7,6 +7,7 @@
 //
 
 #import "TQPlayer.h"
+#import "TQPlayerHelper.h"
 #import "TQPlayerWindow.h"
 #import "TQPlayerViewController.h"
 #import <CoreTelephony/CTCall.h>
@@ -42,6 +43,11 @@
                                                  selector:@selector(applicationWillResignActive:)
                                                      name:UIApplicationWillResignActiveNotification
                                                    object:nil];
+        [[NSNotificationCenter defaultCenter] addObserver:self
+                                                 selector:@selector(applicationWillChangeStatusBarOrientation:)
+                                                     name:UIApplicationWillChangeStatusBarOrientationNotification
+                                                   object:nil];
+        
         //处理来电后锁屏
         __weak __typeof__(self) weakSelf = self;
         self.callCenter = [[CTCallCenter alloc] init];
@@ -87,6 +93,10 @@
         return;
     }
     [self playWithURL:URL live:NO];
+    
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [TQPlayerHelper updateWindow:self.playerWindow toInterfaceOrientation:UIInterfaceOrientationLandscapeLeft animated:YES];
+    });
 }
 
 - (void)playWithURL:(NSURL *)URL live:(BOOL)live{
@@ -155,6 +165,18 @@
 
 - (void)applicationWillResignActive:(id)sender{
 
+}
+
+- (void)applicationWillChangeStatusBarOrientation:(id)sender{
+    TQPlayerViewController *playerViewController = [self currentPlayerViewController];
+    //当播放状态为小窗状态时，让窗口根据状态栏方向，来保持小窗方向与UI界面方向统一。
+    if (playerViewController && playerViewController.mode == TQPlayerViewControllerMiniScreenMode) {
+        NSNotification *notification = (NSNotification *)sender;
+        NSNumber *number = [notification.userInfo objectForKey:UIApplicationStatusBarOrientationUserInfoKey];
+        UIInterfaceOrientation orientation = [number intValue];
+        [TQPlayerHelper updateWindow:self.playerWindow rotatableViewOrientation:orientation updateStatusBar:NO duration:[UIApplication sharedApplication].statusBarOrientationAnimationDuration];
+        [TQPlayerHelper updateWindow:self.playerWindow toInterfaceOrientation:orientation animated:YES];
+    }
 }
 
 @end

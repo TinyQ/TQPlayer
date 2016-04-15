@@ -67,6 +67,21 @@
     [self.countdownTrigger pause];
 }
 
+- (BOOL)shouldAutorotate{
+    if (self.mode == TQPlayerViewControllerFullScreenMode) {
+        //全屏播放，应该支持个个方向。
+        return YES;
+    } else if(self.mode == TQPlayerViewControllerMiniScreenMode) {
+        //小窗播放，应该根据状态栏方向，来保持小窗方向与UI界面方向统一。在TQPlayer里处理
+        return NO;
+    }
+    return NO;
+}
+
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
+    return UIInterfaceOrientationMaskAll;
+}
+
 #pragma mark - Public
 
 - (void)playURL:(NSURL *)URL{

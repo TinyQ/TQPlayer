@@ -26,6 +26,7 @@
     
     [self.window setRootViewController:self.tabBarController];
     [self.window makeKeyAndVisible];
+
     return YES;
 }
 

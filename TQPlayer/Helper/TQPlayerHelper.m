@@ -143,14 +143,13 @@
     NSInvocation * myInvocation = [NSInvocation invocationWithMethodSignature: sig];
     [myInvocation setTarget:window];
     [myInvocation setSelector: mySelector];
-    [myInvocation setArgument:&orientation atIndex: 2];
-    [myInvocation setArgument:&animated atIndex: 3];
+    [myInvocation setArgument:&orientation atIndex:2];
+    [myInvocation setArgument:&animated atIndex:3];
     [myInvocation retainArguments];
     [myInvocation invoke];
 }
 
 + (void)updateWindow:(UIWindow *)window toInterfaceOrientation:(UIInterfaceOrientation)orientation completion:(void (^)(BOOL finished))completion{
-    
     [[self class] updateWindow:window toInterfaceOrientation:orientation animated:YES];
     NSTimeInterval duration = 0;
     duration += [UIApplication sharedApplication].statusBarOrientationAnimationDuration;
@@ -160,6 +159,40 @@
             completion(YES);
         }
     });
+}
+
++ (void)updateWindow:(UIWindow *)window toInterfaceOrientation:(UIInterfaceOrientation)orientation duration:(double)duration force:(BOOL)force{
+    NSString *selector = @"_updateToInterfaceOrientation:duration:force:";
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    SEL mySelector = NSSelectorFromString(selector);
+#pragma clang diagnostic pop
+    NSMethodSignature * sig = [[window class] instanceMethodSignatureForSelector:mySelector];
+    NSInvocation * myInvocation = [NSInvocation invocationWithMethodSignature: sig];
+    [myInvocation setTarget:window];
+    [myInvocation setSelector: mySelector];
+    [myInvocation setArgument:&orientation atIndex:2];
+    [myInvocation setArgument:&duration atIndex:3];
+    [myInvocation setArgument:&force atIndex:4];
+    [myInvocation retainArguments];
+    [myInvocation invoke];
+}
+
++ (void)updateWindow:(UIWindow *)window rotatableViewOrientation:(UIInterfaceOrientation)orientation updateStatusBar:(BOOL)updateStatusBar duration:(double)duration{
+    NSString *selector = @"_setRotatableViewOrientation:updateStatusBar:duration:";
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wundeclared-selector"
+    SEL mySelector = NSSelectorFromString(selector);
+#pragma clang diagnostic pop
+    NSMethodSignature * sig = [[window class] instanceMethodSignatureForSelector:mySelector];
+    NSInvocation * myInvocation = [NSInvocation invocationWithMethodSignature:sig];
+    [myInvocation setTarget:window];
+    [myInvocation setSelector: mySelector];
+    [myInvocation setArgument:&orientation atIndex:2];
+    [myInvocation setArgument:&updateStatusBar atIndex:3];
+    [myInvocation setArgument:&duration atIndex:4];
+    [myInvocation retainArguments];
+    [myInvocation invoke];
 }
 
 + (UIView *)iOSAVPlayerView{
