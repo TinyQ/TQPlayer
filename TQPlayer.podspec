@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
 	
 	s.subspec 'PlayerView' do |ss|
 		ss.source_files = 'TQPlayer/PlayerView/*.{h,m}'
-		ss.public_header_files = 'TQPlayer/PlayerView/*.{h},'
+		ss.public_header_files = 'TQPlayer/PlayerView/*.{h}'
 	end
 
 	s.subspec 'PanelView' do |ss|
