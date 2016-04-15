@@ -32,7 +32,7 @@ Pod::Spec.new do |s|
 	s.subspec 'Resources' do |ss|
 		ss.source_files = 'TQPlayer/Resources/*.{h,m}'
 		ss.public_header_files = 'TQPlayer/Resources/*.{h}'
-		ss.resource = 'TQPlayer/Resources/TQPlayer.bundle'
+		ss.resource = '*.bundle'
 	end
 end
 
