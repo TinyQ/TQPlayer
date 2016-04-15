@@ -1,0 +1,421 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E040D5D01CC0DF0F00B99F25 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D5CF1CC0DF0F00B99F25 /* main.m */; };
+		E040D5D31CC0DF0F00B99F25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D5D21CC0DF0F00B99F25 /* AppDelegate.m */; };
+		E040D5D61CC0DF0F00B99F25 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D5D51CC0DF0F00B99F25 /* ViewController.m */; };
+		E040D5D91CC0DF0F00B99F25 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E040D5D71CC0DF0F00B99F25 /* Main.storyboard */; };
+		E040D5DB1CC0DF0F00B99F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E040D5DA1CC0DF0F00B99F25 /* Assets.xcassets */; };
+		E040D5DE1CC0DF0F00B99F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E040D5DC1CC0DF0F00B99F25 /* LaunchScreen.storyboard */; };
+		E040D64B1CC0E23100B99F25 /* TQPlayerBrightness.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6311CC0E23100B99F25 /* TQPlayerBrightness.m */; };
+		E040D64C1CC0E23100B99F25 /* TQPlayerCountdownTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6331CC0E23100B99F25 /* TQPlayerCountdownTrigger.m */; };
+		E040D64D1CC0E23100B99F25 /* TQPlayerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6351CC0E23100B99F25 /* TQPlayerHelper.m */; };
+		E040D64E1CC0E23100B99F25 /* TQPlayerFullScreenPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6381CC0E23100B99F25 /* TQPlayerFullScreenPanel.m */; };
+		E040D64F1CC0E23100B99F25 /* TQPlayerMiniScreenPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D63A1CC0E23100B99F25 /* TQPlayerMiniScreenPanel.m */; };
+		E040D6501CC0E23100B99F25 /* TQPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D63E1CC0E23100B99F25 /* TQPlayerView.m */; };
+		E040D6511CC0E23100B99F25 /* TQPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6401CC0E23100B99F25 /* TQPlayerViewController.m */; };
+		E040D6521CC0E23100B99F25 /* TQPlayerViewGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6421CC0E23100B99F25 /* TQPlayerViewGestureRecognizer.m */; };
+		E040D6531CC0E23100B99F25 /* TQPlayerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6441CC0E23100B99F25 /* TQPlayerWindow.m */; };
+		E040D6541CC0E23100B99F25 /* TQPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E040D6461CC0E23100B99F25 /* TQPlayer.bundle */; };
+		E040D6551CC0E23100B99F25 /* TQPlayerResources.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6481CC0E23100B99F25 /* TQPlayerResources.m */; };
+		E040D6561CC0E23100B99F25 /* TQPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D64A1CC0E23100B99F25 /* TQPlayer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E040D5CB1CC0DF0E00B99F25 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E040D5CF1CC0DF0F00B99F25 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E040D5D11CC0DF0F00B99F25 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E040D5D21CC0DF0F00B99F25 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E040D5D41CC0DF0F00B99F25 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E040D5D51CC0DF0F00B99F25 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E040D5D81CC0DF0F00B99F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E040D5DA1CC0DF0F00B99F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E040D5DD1CC0DF0F00B99F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E040D5DF1CC0DF0F00B99F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E040D6301CC0E23100B99F25 /* TQPlayerBrightness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerBrightness.h; sourceTree = "<group>"; };
+		E040D6311CC0E23100B99F25 /* TQPlayerBrightness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerBrightness.m; sourceTree = "<group>"; };
+		E040D6321CC0E23100B99F25 /* TQPlayerCountdownTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerCountdownTrigger.h; sourceTree = "<group>"; };
+		E040D6331CC0E23100B99F25 /* TQPlayerCountdownTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerCountdownTrigger.m; sourceTree = "<group>"; };
+		E040D6341CC0E23100B99F25 /* TQPlayerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerHelper.h; sourceTree = "<group>"; };
+		E040D6351CC0E23100B99F25 /* TQPlayerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerHelper.m; sourceTree = "<group>"; };
+		E040D6371CC0E23100B99F25 /* TQPlayerFullScreenPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerFullScreenPanel.h; sourceTree = "<group>"; };
+		E040D6381CC0E23100B99F25 /* TQPlayerFullScreenPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerFullScreenPanel.m; sourceTree = "<group>"; };
+		E040D6391CC0E23100B99F25 /* TQPlayerMiniScreenPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerMiniScreenPanel.h; sourceTree = "<group>"; };
+		E040D63A1CC0E23100B99F25 /* TQPlayerMiniScreenPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerMiniScreenPanel.m; sourceTree = "<group>"; };
+		E040D63B1CC0E23100B99F25 /* TQPlayerPanelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerPanelProtocol.h; sourceTree = "<group>"; };
+		E040D63D1CC0E23100B99F25 /* TQPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerView.h; sourceTree = "<group>"; };
+		E040D63E1CC0E23100B99F25 /* TQPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerView.m; sourceTree = "<group>"; };
+		E040D63F1CC0E23100B99F25 /* TQPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerViewController.h; sourceTree = "<group>"; };
+		E040D6401CC0E23100B99F25 /* TQPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerViewController.m; sourceTree = "<group>"; };
+		E040D6411CC0E23100B99F25 /* TQPlayerViewGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerViewGestureRecognizer.h; sourceTree = "<group>"; };
+		E040D6421CC0E23100B99F25 /* TQPlayerViewGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerViewGestureRecognizer.m; sourceTree = "<group>"; };
+		E040D6431CC0E23100B99F25 /* TQPlayerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerWindow.h; sourceTree = "<group>"; };
+		E040D6441CC0E23100B99F25 /* TQPlayerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerWindow.m; sourceTree = "<group>"; };
+		E040D6461CC0E23100B99F25 /* TQPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TQPlayer.bundle; sourceTree = "<group>"; };
+		E040D6471CC0E23100B99F25 /* TQPlayerResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerResources.h; sourceTree = "<group>"; };
+		E040D6481CC0E23100B99F25 /* TQPlayerResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerResources.m; sourceTree = "<group>"; };
+		E040D6491CC0E23100B99F25 /* TQPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayer.h; sourceTree = "<group>"; };
+		E040D64A1CC0E23100B99F25 /* TQPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E040D5C81CC0DF0E00B99F25 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E040D5C21CC0DF0E00B99F25 = {
+			isa = PBXGroup;
+			children = (
+				E040D60A1CC0DFCA00B99F25 /* TQPlayer */,
+				E040D5CD1CC0DF0F00B99F25 /* Demo */,
+				E040D5CC1CC0DF0E00B99F25 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E040D5CC1CC0DF0E00B99F25 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E040D5CB1CC0DF0E00B99F25 /* Demo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E040D5CD1CC0DF0F00B99F25 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				E040D5D11CC0DF0F00B99F25 /* AppDelegate.h */,
+				E040D5D21CC0DF0F00B99F25 /* AppDelegate.m */,
+				E040D5D41CC0DF0F00B99F25 /* ViewController.h */,
+				E040D5D51CC0DF0F00B99F25 /* ViewController.m */,
+				E040D5D71CC0DF0F00B99F25 /* Main.storyboard */,
+				E040D5DA1CC0DF0F00B99F25 /* Assets.xcassets */,
+				E040D5DC1CC0DF0F00B99F25 /* LaunchScreen.storyboard */,
+				E040D5DF1CC0DF0F00B99F25 /* Info.plist */,
+				E040D5CE1CC0DF0F00B99F25 /* Supporting Files */,
+			);
+			path = Demo;
+			sourceTree = "<group>";
+		};
+		E040D5CE1CC0DF0F00B99F25 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E040D5CF1CC0DF0F00B99F25 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E040D60A1CC0DFCA00B99F25 /* TQPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				E040D6491CC0E23100B99F25 /* TQPlayer.h */,
+				E040D64A1CC0E23100B99F25 /* TQPlayer.m */,
+				E040D63C1CC0E23100B99F25 /* PlayerView */,
+				E040D6361CC0E23100B99F25 /* PanelView */,
+				E040D62F1CC0E23100B99F25 /* Helper */,
+				E040D6451CC0E23100B99F25 /* Resources */,
+			);
+			name = TQPlayer;
+			path = ../TQPlayer;
+			sourceTree = "<group>";
+		};
+		E040D62F1CC0E23100B99F25 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				E040D6341CC0E23100B99F25 /* TQPlayerHelper.h */,
+				E040D6351CC0E23100B99F25 /* TQPlayerHelper.m */,
+				E040D6301CC0E23100B99F25 /* TQPlayerBrightness.h */,
+				E040D6311CC0E23100B99F25 /* TQPlayerBrightness.m */,
+				E040D6321CC0E23100B99F25 /* TQPlayerCountdownTrigger.h */,
+				E040D6331CC0E23100B99F25 /* TQPlayerCountdownTrigger.m */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		E040D6361CC0E23100B99F25 /* PanelView */ = {
+			isa = PBXGroup;
+			children = (
+				E040D63B1CC0E23100B99F25 /* TQPlayerPanelProtocol.h */,
+				E040D6371CC0E23100B99F25 /* TQPlayerFullScreenPanel.h */,
+				E040D6381CC0E23100B99F25 /* TQPlayerFullScreenPanel.m */,
+				E040D6391CC0E23100B99F25 /* TQPlayerMiniScreenPanel.h */,
+				E040D63A1CC0E23100B99F25 /* TQPlayerMiniScreenPanel.m */,
+			);
+			path = PanelView;
+			sourceTree = "<group>";
+		};
+		E040D63C1CC0E23100B99F25 /* PlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				E040D63D1CC0E23100B99F25 /* TQPlayerView.h */,
+				E040D63E1CC0E23100B99F25 /* TQPlayerView.m */,
+				E040D6431CC0E23100B99F25 /* TQPlayerWindow.h */,
+				E040D6441CC0E23100B99F25 /* TQPlayerWindow.m */,
+				E040D63F1CC0E23100B99F25 /* TQPlayerViewController.h */,
+				E040D6401CC0E23100B99F25 /* TQPlayerViewController.m */,
+				E040D6411CC0E23100B99F25 /* TQPlayerViewGestureRecognizer.h */,
+				E040D6421CC0E23100B99F25 /* TQPlayerViewGestureRecognizer.m */,
+			);
+			path = PlayerView;
+			sourceTree = "<group>";
+		};
+		E040D6451CC0E23100B99F25 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E040D6471CC0E23100B99F25 /* TQPlayerResources.h */,
+				E040D6481CC0E23100B99F25 /* TQPlayerResources.m */,
+				E040D6461CC0E23100B99F25 /* TQPlayer.bundle */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E040D5CA1CC0DF0E00B99F25 /* Demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E040D5E21CC0DF0F00B99F25 /* Build configuration list for PBXNativeTarget "Demo" */;
+			buildPhases = (
+				E040D5C71CC0DF0E00B99F25 /* Sources */,
+				E040D5C81CC0DF0E00B99F25 /* Frameworks */,
+				E040D5C91CC0DF0E00B99F25 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Demo;
+			productName = Demo;
+			productReference = E040D5CB1CC0DF0E00B99F25 /* Demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E040D5C31CC0DF0E00B99F25 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = qfu;
+				TargetAttributes = {
+					E040D5CA1CC0DF0E00B99F25 = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = E040D5C61CC0DF0E00B99F25 /* Build configuration list for PBXProject "Demo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E040D5C21CC0DF0E00B99F25;
+			productRefGroup = E040D5CC1CC0DF0E00B99F25 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E040D5CA1CC0DF0E00B99F25 /* Demo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E040D5C91CC0DF0E00B99F25 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E040D5DE1CC0DF0F00B99F25 /* LaunchScreen.storyboard in Resources */,
+				E040D6541CC0E23100B99F25 /* TQPlayer.bundle in Resources */,
+				E040D5DB1CC0DF0F00B99F25 /* Assets.xcassets in Resources */,
+				E040D5D91CC0DF0F00B99F25 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E040D5C71CC0DF0E00B99F25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E040D5D61CC0DF0F00B99F25 /* ViewController.m in Sources */,
+				E040D6521CC0E23100B99F25 /* TQPlayerViewGestureRecognizer.m in Sources */,
+				E040D6551CC0E23100B99F25 /* TQPlayerResources.m in Sources */,
+				E040D5D31CC0DF0F00B99F25 /* AppDelegate.m in Sources */,
+				E040D64C1CC0E23100B99F25 /* TQPlayerCountdownTrigger.m in Sources */,
+				E040D64F1CC0E23100B99F25 /* TQPlayerMiniScreenPanel.m in Sources */,
+				E040D64E1CC0E23100B99F25 /* TQPlayerFullScreenPanel.m in Sources */,
+				E040D6561CC0E23100B99F25 /* TQPlayer.m in Sources */,
+				E040D6501CC0E23100B99F25 /* TQPlayerView.m in Sources */,
+				E040D64B1CC0E23100B99F25 /* TQPlayerBrightness.m in Sources */,
+				E040D5D01CC0DF0F00B99F25 /* main.m in Sources */,
+				E040D6531CC0E23100B99F25 /* TQPlayerWindow.m in Sources */,
+				E040D6511CC0E23100B99F25 /* TQPlayerViewController.m in Sources */,
+				E040D64D1CC0E23100B99F25 /* TQPlayerHelper.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E040D5D71CC0DF0F00B99F25 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E040D5D81CC0DF0F00B99F25 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E040D5DC1CC0DF0F00B99F25 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E040D5DD1CC0DF0F00B99F25 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E040D5E01CC0DF0F00B99F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E040D5E11CC0DF0F00B99F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E040D5E31CC0DF0F00B99F25 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qfu.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		E040D5E41CC0DF0F00B99F25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = Demo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = qfu.Demo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E040D5C61CC0DF0E00B99F25 /* Build configuration list for PBXProject "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E040D5E01CC0DF0F00B99F25 /* Debug */,
+				E040D5E11CC0DF0F00B99F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E040D5E21CC0DF0F00B99F25 /* Build configuration list for PBXNativeTarget "Demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E040D5E31CC0DF0F00B99F25 /* Debug */,
+				E040D5E41CC0DF0F00B99F25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E040D5C31CC0DF0E00B99F25 /* Project object */;
+}
