@@ -30,6 +30,7 @@
 //private
 @property (nonatomic,assign) BOOL isLoadingAnimating;
 @property (nonatomic,assign) double currentSeekTime;
+@property (nonatomic,weak) NSTimer *timer;
 
 @end
 
@@ -44,7 +45,15 @@
 }
 
 - (void)dealloc{
-    [self.countdownTrigger invalidate];
+    if (self.countdownTrigger) {
+        [self.countdownTrigger invalidate];
+        self.countdownTrigger = nil;
+    }
+
+    if (self.timer) {
+        [self.timer invalidate];
+        self.timer = nil;
+    }
 }
 
 - (void)viewDidLoad{
@@ -59,12 +68,25 @@
     [super viewWillAppear:animated];
     [self.countdownTrigger reset];
     [self.countdownTrigger resume];
+    
+    if (self.timer == nil) {
+        self.timer = [NSTimer scheduledTimerWithTimeInterval:0.5
+                                                      target:self
+                                                    selector:@selector(timerTick:)
+                                                    userInfo:nil
+                                                     repeats:YES];
+    }
 }
 
 - (void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
     [self.countdownTrigger pause];
+    
+    if (self.timer) {
+        [self.timer invalidate];
+        self.timer = nil;
+    }
 }
 
 - (BOOL)shouldAutorotate{
@@ -653,6 +675,15 @@
     [[self currentPanel] hiddenPlayPanelWithAnimationCompletion:^(BOOL finished) {
         
     }];
+}
+
+#pragma mark - Timer
+
+- (void)timerTick:(id)sender{
+    //当处于小窗模式时，如果应用中有浏览器调用系统播放器，会关闭TQPlayer
+    if ([TQPlayerHelper isShowiOSAVPlayerView]) {
+        [self playerPanelCloseEvent];
+    }
 }
 
 @end
