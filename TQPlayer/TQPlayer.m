@@ -175,7 +175,6 @@
         NSNumber *number = [notification.userInfo objectForKey:UIApplicationStatusBarOrientationUserInfoKey];
         UIInterfaceOrientation orientation = [number intValue];
         [TQPlayerHelper updateWindow:self.playerWindow rotatableViewOrientation:orientation updateStatusBar:NO duration:[UIApplication sharedApplication].statusBarOrientationAnimationDuration];
-        [TQPlayerHelper updateWindow:self.playerWindow toInterfaceOrientation:orientation animated:YES];
     }
 }
 
