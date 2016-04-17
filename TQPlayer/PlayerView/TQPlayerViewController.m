@@ -13,7 +13,9 @@
 #import "TQPlayerMiniScreenPanel.h"
 #import "TQPlayerViewGestureRecognizer.h"
 #import "TQPlayerBrightness.h"
+#import "TQPlayerReachability.h"
 #import "TQPlayerResources.h"
+
 @import MediaPlayer;
 
 @interface TQPlayerViewController() <TQPlayerViewDelegate,TQPlayerPanelDelegate,TQPlayerViewGestureRecognizerDelegate>
@@ -25,11 +27,13 @@
 @property (nonatomic,strong) TQPlayerViewGestureRecognizer *playerViewGestureRecognizer;
 @property (nonatomic,strong) UIActivityIndicatorView *activityIndicatorView;
 @property (nonatomic,strong) TQPlayerCountdownTrigger *countdownTrigger;
+@property (nonatomic,strong) TQPlayerReachability *hostReachability;
 @property (nonatomic,assign) BOOL isPlaying;
 @property (nonatomic,assign) BOOL isLive;
 //private
 @property (nonatomic,assign) BOOL isLoadingAnimating;
 @property (nonatomic,assign) double currentSeekTime;
+@property (nonatomic,assign) BOOL allowPlayWithReachableViaWWAN; //default is NO
 @property (nonatomic,weak) NSTimer *timer;
 
 @end
@@ -54,6 +58,8 @@
         [self.timer invalidate];
         self.timer = nil;
     }
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:kTQPlayerReachabilityChangedNotification object:nil];
 }
 
 - (void)viewDidLoad{
@@ -61,6 +67,11 @@
     [self loadPlayerViewWithMode:TQPlayerViewControllerFullScreenMode];
     [self loadPanelViewWithMode:TQPlayerViewControllerFullScreenMode];
     [self.playerViewGestureRecognizer setEnabled:YES];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kTQPlayerReachabilityChangedNotification object:nil];
+    NSString *remoteHostName = @"www.apple.com";
+    self.hostReachability = [TQPlayerReachability reachabilityWithHostName:remoteHostName];
+    [self.hostReachability startNotifier];
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -150,7 +161,7 @@
     }
 }
 
-#pragma mark - get & set
+#pragma mark - Get & Set
 
 - (TQPlayerView *)playerView{
     if (_playerView == nil) {
@@ -201,7 +212,7 @@
     return _countdownTrigger;
 }
 
-#pragma mark - private
+#pragma mark - Private
 
 - (void)loadPlayerViewWithMode:(TQPlayerViewControllerMode)mode{
     if (mode == TQPlayerViewControllerFullScreenMode) {
@@ -684,6 +695,77 @@
     if ([TQPlayerHelper isShowiOSAVPlayerView]) {
         [self playerPanelCloseEvent];
     }
+}
+
+#pragma mark - TQPlayerReachability
+/*!
+ * Called by Reachability whenever status changes.
+ */
+- (void)reachabilityChanged:(NSNotification *)note
+{
+    TQPlayerReachability *curReach = [note object];
+
+    if ([self.playerView.loadedURL isFileURL]) {
+        return;
+    }
+    
+    if (self.presentedViewController) {
+        return;
+    }
+    
+    NetworkStatus networkStatus = [curReach currentReachabilityStatus];
+    
+    if (networkStatus == ReachableViaWiFi){
+        return;
+    }
+    
+    if (networkStatus == ReachableViaWWAN && self.allowPlayWithReachableViaWWAN) {
+        return;
+    }
+    
+    NSString *title = @"";
+    NSString *message = @"";
+    if (networkStatus == NotReachable) {
+        title = @"提醒";
+        message = @"检查您当前的网络连接是否正常";
+    } else if (networkStatus == ReachableViaWiFi){
+        //
+    } else if (networkStatus == ReachableViaWWAN){
+        title = @"流量提醒";
+        message = @"当前不是wifi网络，继续播放可能会产生流量费用";
+        [self pause];
+    }
+    __weak __typeof(self) weakSelf = self;
+    UIAlertController *alert= [UIAlertController alertControllerWithTitle:title
+                                                                  message:message
+                                                           preferredStyle:UIAlertControllerStyleAlert];
+    
+    if (networkStatus == ReachableViaWWAN){
+        UIAlertAction* cancel = [UIAlertAction actionWithTitle:@"取消"
+                                                         style:UIAlertActionStyleDefault
+                                                       handler:^(UIAlertAction * action) {
+                                                           weakSelf.allowPlayWithReachableViaWWAN = NO;
+                                                           if (weakSelf.playerPanelCloseblock) {
+                                                               weakSelf.playerPanelCloseblock();
+                                                           }
+                                                       }];
+        [alert addAction:cancel];
+    }
+    
+    UIAlertAction* ok = [UIAlertAction actionWithTitle:@"确认"
+                                                 style:UIAlertActionStyleDefault
+                                               handler:^(UIAlertAction * action){
+                                                   if (networkStatus == NotReachable) {
+                                                    
+                                                   } else if (networkStatus == ReachableViaWWAN){
+                                                       weakSelf.allowPlayWithReachableViaWWAN = YES;
+                                                       [weakSelf play];
+                                                   }
+                                               }];
+    [alert addAction:ok];
+    [self presentViewController:alert animated:YES completion:^{
+        
+    }];
 }
 
 @end

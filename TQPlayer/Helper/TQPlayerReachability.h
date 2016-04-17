@@ -18,7 +18,7 @@ typedef enum : NSInteger {
 } NetworkStatus;
 
 
-extern NSString *kReachabilityChangedNotification;
+extern NSString *kTQPlayerReachabilityChangedNotification;
 
 
 @interface TQPlayerReachability : NSObject

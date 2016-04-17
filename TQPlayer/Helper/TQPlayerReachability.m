@@ -17,12 +17,12 @@
 
 #import <CoreFoundation/CoreFoundation.h>
 
-NSString *kReachabilityChangedNotification = @"kNetworkReachabilityChangedNotification";
+NSString *kTQPlayerReachabilityChangedNotification = @"kTQPlayerReachabilityChangedNotification";
 
 
 #pragma mark - Supporting functions
 
-#define kShouldPrintReachabilityFlags 1
+#define kShouldPrintReachabilityFlags 0
 
 static void PrintReachabilityFlags(SCNetworkReachabilityFlags flags, const char* comment)
 {
@@ -53,7 +53,7 @@ static void ReachabilityCallback(SCNetworkReachabilityRef target, SCNetworkReach
     
     TQPlayerReachability* noteObject = (__bridge TQPlayerReachability *)info;
     // Post a notification to notify the client that the network reachability changed.
-    [[NSNotificationCenter defaultCenter] postNotificationName: kReachabilityChangedNotification object: noteObject];
+    [[NSNotificationCenter defaultCenter] postNotificationName: kTQPlayerReachabilityChangedNotification object: noteObject];
 }
 
 
