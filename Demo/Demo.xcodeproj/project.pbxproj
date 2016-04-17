@@ -24,6 +24,7 @@
 		E040D6551CC0E23100B99F25 /* TQPlayerResources.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6481CC0E23100B99F25 /* TQPlayerResources.m */; };
 		E040D6561CC0E23100B99F25 /* TQPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D64A1CC0E23100B99F25 /* TQPlayer.m */; };
 		E040D6861CC154E100B99F25 /* ShowPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6851CC154E100B99F25 /* ShowPlayerViewController.m */; };
+		E069380E1CC3B86600DA7C51 /* TQPlayerReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E069380D1CC3B86600DA7C51 /* TQPlayerReachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +61,8 @@
 		E040D64A1CC0E23100B99F25 /* TQPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayer.m; sourceTree = "<group>"; };
 		E040D6841CC154E100B99F25 /* ShowPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPlayerViewController.h; sourceTree = "<group>"; };
 		E040D6851CC154E100B99F25 /* ShowPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPlayerViewController.m; sourceTree = "<group>"; };
+		E069380C1CC3B86600DA7C51 /* TQPlayerReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerReachability.h; sourceTree = "<group>"; };
+		E069380D1CC3B86600DA7C51 /* TQPlayerReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerReachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,6 +137,8 @@
 				E040D6351CC0E23100B99F25 /* TQPlayerHelper.m */,
 				E040D6301CC0E23100B99F25 /* TQPlayerBrightness.h */,
 				E040D6311CC0E23100B99F25 /* TQPlayerBrightness.m */,
+				E069380C1CC3B86600DA7C51 /* TQPlayerReachability.h */,
+				E069380D1CC3B86600DA7C51 /* TQPlayerReachability.m */,
 				E040D6321CC0E23100B99F25 /* TQPlayerCountdownTrigger.h */,
 				E040D6331CC0E23100B99F25 /* TQPlayerCountdownTrigger.m */,
 			);
@@ -260,6 +265,7 @@
 				E040D6531CC0E23100B99F25 /* TQPlayerWindow.m in Sources */,
 				E040D6511CC0E23100B99F25 /* TQPlayerViewController.m in Sources */,
 				E040D6861CC154E100B99F25 /* ShowPlayerViewController.m in Sources */,
+				E069380E1CC3B86600DA7C51 /* TQPlayerReachability.m in Sources */,
 				E040D64D1CC0E23100B99F25 /* TQPlayerHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
