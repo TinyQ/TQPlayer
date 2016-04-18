@@ -79,6 +79,9 @@
 @property (nonatomic,strong) NSLayoutConstraint *playbackLabelConstraintBottom;
 @property (nonatomic,strong) NSLayoutConstraint *playbackLabelConstraintWidth;
 
+@property (nonatomic,assign) double playingProgress;
+@property (nonatomic,assign) double downloadProgress;
+
 - (void)layoutWithDownloadProgress:(double)progress;
 - (void)layoutWithPlayingProgress:(double)progress;
 @end

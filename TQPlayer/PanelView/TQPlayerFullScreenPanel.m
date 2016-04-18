@@ -200,6 +200,11 @@ typedef NS_ENUM(NSInteger, TQPlayerPlayPauseButtonStatus) {
     return self;
 }
 
+- (void)layoutSubviews{
+    [self layoutWithPlayingProgress:self.playingProgress];
+    [self layoutWithDownloadProgress:self.downloadProgress];
+}
+
 - (void)updateConstraints{
     [super updateConstraints];
 
@@ -794,7 +799,7 @@ typedef NS_ENUM(NSInteger, TQPlayerPlayPauseButtonStatus) {
                                                                            attribute:NSLayoutAttributeCenterX
                                                                            relatedBy:NSLayoutRelationEqual
                                                                               toItem:self.progressBarSliderPath
-                                                                           attribute:NSLayoutAttributeLeading
+                                                                           attribute:NSLayoutAttributeLeft
                                                                           multiplier:1.0
                                                                             constant:0];
         _progressBarSliderConstraintCenterX.active = NO;
@@ -951,6 +956,7 @@ typedef NS_ENUM(NSInteger, TQPlayerPlayPauseButtonStatus) {
 }
 
 - (void)layoutWithDownloadProgress:(double)progress{
+    self.downloadProgress = progress;
     [NSLayoutConstraint deactivateConstraints:@[self.progressBarDownloadConstraintWidth]];
     if (progress == 0.0) {
         self.progressBarDownloadConstraintWidth = [NSLayoutConstraint constraintWithItem:self.progressBarDownload
@@ -961,7 +967,6 @@ typedef NS_ENUM(NSInteger, TQPlayerPlayPauseButtonStatus) {
                                                                               multiplier:1.0
                                                                                 constant:0];
     } else {
-        
         self.progressBarDownloadConstraintWidth = [NSLayoutConstraint constraintWithItem:self.progressBarDownload
                                                                                attribute:NSLayoutAttributeWidth
                                                                                relatedBy:NSLayoutRelationEqual
@@ -974,9 +979,12 @@ typedef NS_ENUM(NSInteger, TQPlayerPlayPauseButtonStatus) {
 }
 
 - (void)layoutWithPlayingProgress:(double)progress{
-    [NSLayoutConstraint deactivateConstraints:@[self.progressBarPlayingConstraintWidth,self.progressBarSliderConstraintCenterX]];
-    [NSLayoutConstraint deactivateConstraints:@[self.progressBarSliderConstraintCenterX]];
+    self.playingProgress = progress;
     
+    CGFloat constant = progress * self.progressBarSliderPath.bounds.size.width;
+    
+    [NSLayoutConstraint deactivateConstraints:@[self.progressBarPlayingConstraintWidth]];
+    [NSLayoutConstraint deactivateConstraints:@[self.progressBarSliderConstraintCenterX]];
     if (progress == 0.0) {
         self.progressBarPlayingConstraintWidth = [NSLayoutConstraint constraintWithItem:self.progressBarPlaying
                                                                               attribute:NSLayoutAttributeWidth
@@ -985,13 +993,6 @@ typedef NS_ENUM(NSInteger, TQPlayerPlayPauseButtonStatus) {
                                                                               attribute:NSLayoutAttributeNotAnAttribute
                                                                              multiplier:1.0
                                                                                constant:0];
-        self.progressBarSliderConstraintCenterX = [NSLayoutConstraint constraintWithItem:self.progressBarSlider
-                                                                               attribute:NSLayoutAttributeCenterX
-                                                                               relatedBy:NSLayoutRelationEqual
-                                                                                  toItem:self.progressBarSliderPath
-                                                                               attribute:NSLayoutAttributeLeading
-                                                                              multiplier:1.0
-                                                                                constant:0];
     } else {
         self.progressBarPlayingConstraintWidth = [NSLayoutConstraint constraintWithItem:self.progressBarPlaying
                                                                               attribute:NSLayoutAttributeWidth
@@ -1000,15 +1001,10 @@ typedef NS_ENUM(NSInteger, TQPlayerPlayPauseButtonStatus) {
                                                                               attribute:NSLayoutAttributeWidth
                                                                              multiplier:progress
                                                                                constant:0];
-        self.progressBarSliderConstraintCenterX = [NSLayoutConstraint constraintWithItem:self.progressBarSlider
-                                                                               attribute:NSLayoutAttributeCenterX
-                                                                               relatedBy:NSLayoutRelationEqual
-                                                                                  toItem:self.progressBarSliderPath
-                                                                               attribute:NSLayoutAttributeTrailing
-                                                                              multiplier:progress
-                                                                                constant:0];
     }
-    [NSLayoutConstraint activateConstraints:@[self.progressBarPlayingConstraintWidth,self.progressBarSliderConstraintCenterX]];
+    self.progressBarSliderConstraintCenterX.constant = constant;
+    [NSLayoutConstraint activateConstraints:@[self.progressBarPlayingConstraintWidth]];
+    [NSLayoutConstraint activateConstraints:@[self.progressBarSliderConstraintCenterX]];
 }
 
 @end
