@@ -10,8 +10,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import <QuartzCore/CABase.h>
 
-static void * BBAPlayerViewPlayerContext = &BBAPlayerViewPlayerContext;
-static void * BBAPlayerViewPlayerItemContext = &BBAPlayerViewPlayerItemContext;
+static void * TQPlayerViewPlayerContext = &TQPlayerViewPlayerContext;
+static void * TQPlayerViewPlayerItemContext = &TQPlayerViewPlayerItemContext;
 
 @interface TQPlayerView()
 
@@ -211,11 +211,11 @@ static void * BBAPlayerViewPlayerItemContext = &BBAPlayerViewPlayerItemContext;
     [player addObserver:self
              forKeyPath:NSStringFromSelector(@selector(status))
                 options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
-                context:BBAPlayerViewPlayerContext];
+                context:TQPlayerViewPlayerContext];
     [player addObserver:self
              forKeyPath:NSStringFromSelector(@selector(rate))
                 options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
-                context:BBAPlayerViewPlayerContext];
+                context:TQPlayerViewPlayerContext];
     AVPlayerItem *playerItem = [player currentItem];
     if (playerItem) {
         [self addObserverToPlayerItem:playerItem];
@@ -252,27 +252,27 @@ static void * BBAPlayerViewPlayerItemContext = &BBAPlayerViewPlayerItemContext;
     [playerItem addObserver:self
                  forKeyPath:NSStringFromSelector(@selector(duration))
                     options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
-                    context:BBAPlayerViewPlayerItemContext];
+                    context:TQPlayerViewPlayerItemContext];
     [playerItem addObserver:self
                  forKeyPath:NSStringFromSelector(@selector(presentationSize))
                     options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
-                    context:BBAPlayerViewPlayerItemContext];
+                    context:TQPlayerViewPlayerItemContext];
     [playerItem addObserver:self
                  forKeyPath:NSStringFromSelector(@selector(loadedTimeRanges))
                     options:NSKeyValueObservingOptionNew
-                    context:BBAPlayerViewPlayerItemContext];
+                    context:TQPlayerViewPlayerItemContext];
     [playerItem addObserver:self
                  forKeyPath:@"playbackLikelyToKeepUp"
                     options:NSKeyValueObservingOptionNew
-                    context:BBAPlayerViewPlayerItemContext];
+                    context:TQPlayerViewPlayerItemContext];
     [playerItem addObserver:self
                  forKeyPath:@"playbackBufferEmpty"
                     options:NSKeyValueObservingOptionNew
-                    context:BBAPlayerViewPlayerItemContext];
+                    context:TQPlayerViewPlayerItemContext];
     [playerItem addObserver:self
                  forKeyPath:@"playbackBufferFull"
                     options:NSKeyValueObservingOptionNew
-                    context:BBAPlayerViewPlayerItemContext];
+                    context:TQPlayerViewPlayerItemContext];
     [[NSNotificationCenter defaultCenter] addObserver:self
                                              selector:@selector(playerItemDidPlayToEndTime:)
                                                  name:AVPlayerItemDidPlayToEndTimeNotification
@@ -304,7 +304,7 @@ static void * BBAPlayerViewPlayerItemContext = &BBAPlayerViewPlayerItemContext;
     id newObj = [change objectForKey:NSKeyValueChangeNewKey];
     id oldObj = [change objectForKey:NSKeyValueChangeOldKey];
     
-    if (context == BBAPlayerViewPlayerContext){
+    if (context == TQPlayerViewPlayerContext){
         if ([keyPath isEqualToString:NSStringFromSelector(@selector(status))]){
             AVPlayerStatus new = [newObj integerValue];
             AVPlayerStatus old = [oldObj integerValue];
@@ -318,7 +318,7 @@ static void * BBAPlayerViewPlayerItemContext = &BBAPlayerViewPlayerItemContext;
                 [self rateChangeWithPlayer:object new:new old:old];
             }
         }
-    } else if (context == BBAPlayerViewPlayerItemContext) {
+    } else if (context == TQPlayerViewPlayerItemContext) {
         if ([keyPath isEqualToString:NSStringFromSelector(@selector(duration))]){
             CMTime new = [newObj CMTimeValue];
             CMTime old = [oldObj CMTimeValue];
