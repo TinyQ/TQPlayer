@@ -119,6 +119,13 @@
     }
 }
 
+- (void)play{
+    TQPlayerViewController *playerViewController = [self currentPlayerViewController];
+    if (playerViewController) {
+        [playerViewController play];
+    }
+}
+
 - (void)pause{
     TQPlayerViewController *playerViewController = [self currentPlayerViewController];
     if (playerViewController) {
@@ -135,13 +142,6 @@
             self.playerWindow = nil;
         }
     }];
-}
-
-- (void)resume{
-    TQPlayerViewController *playerViewController = [self currentPlayerViewController];
-    if (playerViewController) {
-        [playerViewController play];
-    }
 }
 
 #pragma mark - private

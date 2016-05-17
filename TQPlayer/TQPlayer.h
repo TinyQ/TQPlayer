@@ -14,8 +14,8 @@
 
 - (void)playWithURL:(NSURL *)URL;
 - (void)playWithURL:(NSURL *)URL live:(BOOL)live;
+- (void)play;
 - (void)pause;
 - (void)close;
-- (void)resume;
 
 @end
