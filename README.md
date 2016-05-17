@@ -6,7 +6,9 @@
 ![](https://raw.github.com/TinyQ/TQPlayer/master/README_IMG/1.3.PNG)
 
 ![](https://raw.github.com/TinyQ/TQPlayer/master/README_IMG/2.1.PNG)
+
 ![](https://raw.github.com/TinyQ/TQPlayer/master/README_IMG/2.2.PNG)
+
 ![](https://raw.github.com/TinyQ/TQPlayer/master/README_IMG/2.3.PNG)
 
 ##Introduction
