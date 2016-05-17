@@ -1,7 +1,13 @@
 # TQPlayer
 
 ##Demo
-![](https://github.com/TinyQ/TQPlayer/blob/master/README_IMG/1.1.png)
+![](https://raw.github.com/TinyQ/TQPlayer/master/README_IMG/1.1.PNG)
+![](https://raw.github.com/TinyQ/TQPlayer/master/README_IMG/1.2.PNG)
+![](https://raw.github.com/TinyQ/TQPlayer/master/README_IMG/1.3.PNG)
+
+![](https://raw.github.com/TinyQ/TQPlayer/master/README_IMG/2.1.PNG)
+![](https://raw.github.com/TinyQ/TQPlayer/master/README_IMG/2.2.PNG)
+![](https://raw.github.com/TinyQ/TQPlayer/master/README_IMG/2.3.PNG)
 
 ##Introduction
 TQPlayer is a video player base on `AVPlayer`.Support witch full & mini screen play. Support brightness, volume, and the playback progress gestures. TQPlayer is a Singleton, using the video player in globally is suitable.
