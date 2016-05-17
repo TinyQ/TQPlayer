@@ -1,5 +1,7 @@
 # TQPlayer
 
+##Demo
+
 ##Introduction
 TQPlayer is a video player base on `AVPlayer`.Support witch full & mini screen play. Support brightness, volume, and the playback progress gestures. TQPlayer is a Singleton, using the video player in globally is suitable.
 
