@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
 	s.public_header_files = 'TQPlayer/*.{h}'
 	
 	s.ios.deployment_target = '8.0'
-	s.platform = :ios
+	s.platform = :ios, '8.0'
 	
 	s.subspec 'PlayerView' do |ss|
 		ss.source_files = 'TQPlayer/PlayerView/*.{h,m}'
