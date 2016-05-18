@@ -11,20 +11,20 @@
 		E040D5D31CC0DF0F00B99F25 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D5D21CC0DF0F00B99F25 /* AppDelegate.m */; };
 		E040D5DB1CC0DF0F00B99F25 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E040D5DA1CC0DF0F00B99F25 /* Assets.xcassets */; };
 		E040D5DE1CC0DF0F00B99F25 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E040D5DC1CC0DF0F00B99F25 /* LaunchScreen.storyboard */; };
-		E040D64B1CC0E23100B99F25 /* TQPlayerBrightness.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6311CC0E23100B99F25 /* TQPlayerBrightness.m */; };
-		E040D64C1CC0E23100B99F25 /* TQPlayerCountdownTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6331CC0E23100B99F25 /* TQPlayerCountdownTrigger.m */; };
-		E040D64D1CC0E23100B99F25 /* TQPlayerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6351CC0E23100B99F25 /* TQPlayerHelper.m */; };
-		E040D64E1CC0E23100B99F25 /* TQPlayerFullScreenPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6381CC0E23100B99F25 /* TQPlayerFullScreenPanel.m */; };
-		E040D64F1CC0E23100B99F25 /* TQPlayerMiniScreenPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D63A1CC0E23100B99F25 /* TQPlayerMiniScreenPanel.m */; };
-		E040D6501CC0E23100B99F25 /* TQPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D63E1CC0E23100B99F25 /* TQPlayerView.m */; };
-		E040D6511CC0E23100B99F25 /* TQPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6401CC0E23100B99F25 /* TQPlayerViewController.m */; };
-		E040D6521CC0E23100B99F25 /* TQPlayerViewGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6421CC0E23100B99F25 /* TQPlayerViewGestureRecognizer.m */; };
-		E040D6531CC0E23100B99F25 /* TQPlayerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6441CC0E23100B99F25 /* TQPlayerWindow.m */; };
-		E040D6541CC0E23100B99F25 /* TQPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E040D6461CC0E23100B99F25 /* TQPlayer.bundle */; };
-		E040D6551CC0E23100B99F25 /* TQPlayerResources.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6481CC0E23100B99F25 /* TQPlayerResources.m */; };
-		E040D6561CC0E23100B99F25 /* TQPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D64A1CC0E23100B99F25 /* TQPlayer.m */; };
 		E040D6861CC154E100B99F25 /* ShowPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E040D6851CC154E100B99F25 /* ShowPlayerViewController.m */; };
-		E069380E1CC3B86600DA7C51 /* TQPlayerReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E069380D1CC3B86600DA7C51 /* TQPlayerReachability.m */; };
+		E0B02E861CECB9B100FBF992 /* TQPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E0B02E6C1CECB9B100FBF992 /* TQPlayer.bundle */; };
+		E0B02E871CECB9B100FBF992 /* TQPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B02E6E1CECB9B100FBF992 /* TQPlayer.m */; };
+		E0B02E881CECB9B100FBF992 /* TQPlayerBrightness.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B02E701CECB9B100FBF992 /* TQPlayerBrightness.m */; };
+		E0B02E891CECB9B100FBF992 /* TQPlayerCountdownTrigger.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B02E721CECB9B100FBF992 /* TQPlayerCountdownTrigger.m */; };
+		E0B02E8A1CECB9B100FBF992 /* TQPlayerFullScreenPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B02E741CECB9B100FBF992 /* TQPlayerFullScreenPanel.m */; };
+		E0B02E8B1CECB9B100FBF992 /* TQPlayerHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B02E761CECB9B100FBF992 /* TQPlayerHelper.m */; };
+		E0B02E8C1CECB9B100FBF992 /* TQPlayerMiniScreenPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B02E781CECB9B100FBF992 /* TQPlayerMiniScreenPanel.m */; };
+		E0B02E8D1CECB9B100FBF992 /* TQPlayerReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B02E7B1CECB9B100FBF992 /* TQPlayerReachability.m */; };
+		E0B02E8E1CECB9B100FBF992 /* TQPlayerResources.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B02E7D1CECB9B100FBF992 /* TQPlayerResources.m */; };
+		E0B02E8F1CECB9B100FBF992 /* TQPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B02E7F1CECB9B100FBF992 /* TQPlayerView.m */; };
+		E0B02E901CECB9B100FBF992 /* TQPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B02E811CECB9B100FBF992 /* TQPlayerViewController.m */; };
+		E0B02E911CECB9B100FBF992 /* TQPlayerViewGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B02E831CECB9B100FBF992 /* TQPlayerViewGestureRecognizer.m */; };
+		E0B02E921CECB9B100FBF992 /* TQPlayerWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = E0B02E851CECB9B100FBF992 /* TQPlayerWindow.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,34 +35,34 @@
 		E040D5DA1CC0DF0F00B99F25 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E040D5DD1CC0DF0F00B99F25 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E040D5DF1CC0DF0F00B99F25 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E040D6301CC0E23100B99F25 /* TQPlayerBrightness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerBrightness.h; sourceTree = "<group>"; };
-		E040D6311CC0E23100B99F25 /* TQPlayerBrightness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerBrightness.m; sourceTree = "<group>"; };
-		E040D6321CC0E23100B99F25 /* TQPlayerCountdownTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerCountdownTrigger.h; sourceTree = "<group>"; };
-		E040D6331CC0E23100B99F25 /* TQPlayerCountdownTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerCountdownTrigger.m; sourceTree = "<group>"; };
-		E040D6341CC0E23100B99F25 /* TQPlayerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerHelper.h; sourceTree = "<group>"; };
-		E040D6351CC0E23100B99F25 /* TQPlayerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerHelper.m; sourceTree = "<group>"; };
-		E040D6371CC0E23100B99F25 /* TQPlayerFullScreenPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerFullScreenPanel.h; sourceTree = "<group>"; };
-		E040D6381CC0E23100B99F25 /* TQPlayerFullScreenPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerFullScreenPanel.m; sourceTree = "<group>"; };
-		E040D6391CC0E23100B99F25 /* TQPlayerMiniScreenPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerMiniScreenPanel.h; sourceTree = "<group>"; };
-		E040D63A1CC0E23100B99F25 /* TQPlayerMiniScreenPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerMiniScreenPanel.m; sourceTree = "<group>"; };
-		E040D63B1CC0E23100B99F25 /* TQPlayerPanelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerPanelProtocol.h; sourceTree = "<group>"; };
-		E040D63D1CC0E23100B99F25 /* TQPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerView.h; sourceTree = "<group>"; };
-		E040D63E1CC0E23100B99F25 /* TQPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerView.m; sourceTree = "<group>"; };
-		E040D63F1CC0E23100B99F25 /* TQPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerViewController.h; sourceTree = "<group>"; };
-		E040D6401CC0E23100B99F25 /* TQPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerViewController.m; sourceTree = "<group>"; };
-		E040D6411CC0E23100B99F25 /* TQPlayerViewGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerViewGestureRecognizer.h; sourceTree = "<group>"; };
-		E040D6421CC0E23100B99F25 /* TQPlayerViewGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerViewGestureRecognizer.m; sourceTree = "<group>"; };
-		E040D6431CC0E23100B99F25 /* TQPlayerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerWindow.h; sourceTree = "<group>"; };
-		E040D6441CC0E23100B99F25 /* TQPlayerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerWindow.m; sourceTree = "<group>"; };
-		E040D6461CC0E23100B99F25 /* TQPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TQPlayer.bundle; sourceTree = "<group>"; };
-		E040D6471CC0E23100B99F25 /* TQPlayerResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerResources.h; sourceTree = "<group>"; };
-		E040D6481CC0E23100B99F25 /* TQPlayerResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerResources.m; sourceTree = "<group>"; };
-		E040D6491CC0E23100B99F25 /* TQPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayer.h; sourceTree = "<group>"; };
-		E040D64A1CC0E23100B99F25 /* TQPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayer.m; sourceTree = "<group>"; };
 		E040D6841CC154E100B99F25 /* ShowPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPlayerViewController.h; sourceTree = "<group>"; };
 		E040D6851CC154E100B99F25 /* ShowPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPlayerViewController.m; sourceTree = "<group>"; };
-		E069380C1CC3B86600DA7C51 /* TQPlayerReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerReachability.h; sourceTree = "<group>"; };
-		E069380D1CC3B86600DA7C51 /* TQPlayerReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerReachability.m; sourceTree = "<group>"; };
+		E0B02E6C1CECB9B100FBF992 /* TQPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TQPlayer.bundle; sourceTree = "<group>"; };
+		E0B02E6D1CECB9B100FBF992 /* TQPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayer.h; sourceTree = "<group>"; };
+		E0B02E6E1CECB9B100FBF992 /* TQPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayer.m; sourceTree = "<group>"; };
+		E0B02E6F1CECB9B100FBF992 /* TQPlayerBrightness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerBrightness.h; sourceTree = "<group>"; };
+		E0B02E701CECB9B100FBF992 /* TQPlayerBrightness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerBrightness.m; sourceTree = "<group>"; };
+		E0B02E711CECB9B100FBF992 /* TQPlayerCountdownTrigger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerCountdownTrigger.h; sourceTree = "<group>"; };
+		E0B02E721CECB9B100FBF992 /* TQPlayerCountdownTrigger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerCountdownTrigger.m; sourceTree = "<group>"; };
+		E0B02E731CECB9B100FBF992 /* TQPlayerFullScreenPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerFullScreenPanel.h; sourceTree = "<group>"; };
+		E0B02E741CECB9B100FBF992 /* TQPlayerFullScreenPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerFullScreenPanel.m; sourceTree = "<group>"; };
+		E0B02E751CECB9B100FBF992 /* TQPlayerHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerHelper.h; sourceTree = "<group>"; };
+		E0B02E761CECB9B100FBF992 /* TQPlayerHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerHelper.m; sourceTree = "<group>"; };
+		E0B02E771CECB9B100FBF992 /* TQPlayerMiniScreenPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerMiniScreenPanel.h; sourceTree = "<group>"; };
+		E0B02E781CECB9B100FBF992 /* TQPlayerMiniScreenPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerMiniScreenPanel.m; sourceTree = "<group>"; };
+		E0B02E791CECB9B100FBF992 /* TQPlayerPanelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerPanelProtocol.h; sourceTree = "<group>"; };
+		E0B02E7A1CECB9B100FBF992 /* TQPlayerReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerReachability.h; sourceTree = "<group>"; };
+		E0B02E7B1CECB9B100FBF992 /* TQPlayerReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerReachability.m; sourceTree = "<group>"; };
+		E0B02E7C1CECB9B100FBF992 /* TQPlayerResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerResources.h; sourceTree = "<group>"; };
+		E0B02E7D1CECB9B100FBF992 /* TQPlayerResources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerResources.m; sourceTree = "<group>"; };
+		E0B02E7E1CECB9B100FBF992 /* TQPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerView.h; sourceTree = "<group>"; };
+		E0B02E7F1CECB9B100FBF992 /* TQPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerView.m; sourceTree = "<group>"; };
+		E0B02E801CECB9B100FBF992 /* TQPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerViewController.h; sourceTree = "<group>"; };
+		E0B02E811CECB9B100FBF992 /* TQPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerViewController.m; sourceTree = "<group>"; };
+		E0B02E821CECB9B100FBF992 /* TQPlayerViewGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerViewGestureRecognizer.h; sourceTree = "<group>"; };
+		E0B02E831CECB9B100FBF992 /* TQPlayerViewGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerViewGestureRecognizer.m; sourceTree = "<group>"; };
+		E0B02E841CECB9B100FBF992 /* TQPlayerWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TQPlayerWindow.h; sourceTree = "<group>"; };
+		E0B02E851CECB9B100FBF992 /* TQPlayerWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TQPlayerWindow.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,67 +119,35 @@
 		E040D60A1CC0DFCA00B99F25 /* TQPlayer */ = {
 			isa = PBXGroup;
 			children = (
-				E040D6491CC0E23100B99F25 /* TQPlayer.h */,
-				E040D64A1CC0E23100B99F25 /* TQPlayer.m */,
-				E040D63C1CC0E23100B99F25 /* PlayerView */,
-				E040D6361CC0E23100B99F25 /* PanelView */,
-				E040D62F1CC0E23100B99F25 /* Helper */,
-				E040D6451CC0E23100B99F25 /* Resources */,
+				E0B02E6C1CECB9B100FBF992 /* TQPlayer.bundle */,
+				E0B02E6D1CECB9B100FBF992 /* TQPlayer.h */,
+				E0B02E6E1CECB9B100FBF992 /* TQPlayer.m */,
+				E0B02E6F1CECB9B100FBF992 /* TQPlayerBrightness.h */,
+				E0B02E701CECB9B100FBF992 /* TQPlayerBrightness.m */,
+				E0B02E711CECB9B100FBF992 /* TQPlayerCountdownTrigger.h */,
+				E0B02E721CECB9B100FBF992 /* TQPlayerCountdownTrigger.m */,
+				E0B02E731CECB9B100FBF992 /* TQPlayerFullScreenPanel.h */,
+				E0B02E741CECB9B100FBF992 /* TQPlayerFullScreenPanel.m */,
+				E0B02E751CECB9B100FBF992 /* TQPlayerHelper.h */,
+				E0B02E761CECB9B100FBF992 /* TQPlayerHelper.m */,
+				E0B02E771CECB9B100FBF992 /* TQPlayerMiniScreenPanel.h */,
+				E0B02E781CECB9B100FBF992 /* TQPlayerMiniScreenPanel.m */,
+				E0B02E791CECB9B100FBF992 /* TQPlayerPanelProtocol.h */,
+				E0B02E7A1CECB9B100FBF992 /* TQPlayerReachability.h */,
+				E0B02E7B1CECB9B100FBF992 /* TQPlayerReachability.m */,
+				E0B02E7C1CECB9B100FBF992 /* TQPlayerResources.h */,
+				E0B02E7D1CECB9B100FBF992 /* TQPlayerResources.m */,
+				E0B02E7E1CECB9B100FBF992 /* TQPlayerView.h */,
+				E0B02E7F1CECB9B100FBF992 /* TQPlayerView.m */,
+				E0B02E801CECB9B100FBF992 /* TQPlayerViewController.h */,
+				E0B02E811CECB9B100FBF992 /* TQPlayerViewController.m */,
+				E0B02E821CECB9B100FBF992 /* TQPlayerViewGestureRecognizer.h */,
+				E0B02E831CECB9B100FBF992 /* TQPlayerViewGestureRecognizer.m */,
+				E0B02E841CECB9B100FBF992 /* TQPlayerWindow.h */,
+				E0B02E851CECB9B100FBF992 /* TQPlayerWindow.m */,
 			);
 			name = TQPlayer;
 			path = ../TQPlayer;
-			sourceTree = "<group>";
-		};
-		E040D62F1CC0E23100B99F25 /* Helper */ = {
-			isa = PBXGroup;
-			children = (
-				E040D6341CC0E23100B99F25 /* TQPlayerHelper.h */,
-				E040D6351CC0E23100B99F25 /* TQPlayerHelper.m */,
-				E040D6301CC0E23100B99F25 /* TQPlayerBrightness.h */,
-				E040D6311CC0E23100B99F25 /* TQPlayerBrightness.m */,
-				E069380C1CC3B86600DA7C51 /* TQPlayerReachability.h */,
-				E069380D1CC3B86600DA7C51 /* TQPlayerReachability.m */,
-				E040D6321CC0E23100B99F25 /* TQPlayerCountdownTrigger.h */,
-				E040D6331CC0E23100B99F25 /* TQPlayerCountdownTrigger.m */,
-			);
-			path = Helper;
-			sourceTree = "<group>";
-		};
-		E040D6361CC0E23100B99F25 /* PanelView */ = {
-			isa = PBXGroup;
-			children = (
-				E040D63B1CC0E23100B99F25 /* TQPlayerPanelProtocol.h */,
-				E040D6371CC0E23100B99F25 /* TQPlayerFullScreenPanel.h */,
-				E040D6381CC0E23100B99F25 /* TQPlayerFullScreenPanel.m */,
-				E040D6391CC0E23100B99F25 /* TQPlayerMiniScreenPanel.h */,
-				E040D63A1CC0E23100B99F25 /* TQPlayerMiniScreenPanel.m */,
-			);
-			path = PanelView;
-			sourceTree = "<group>";
-		};
-		E040D63C1CC0E23100B99F25 /* PlayerView */ = {
-			isa = PBXGroup;
-			children = (
-				E040D63D1CC0E23100B99F25 /* TQPlayerView.h */,
-				E040D63E1CC0E23100B99F25 /* TQPlayerView.m */,
-				E040D6431CC0E23100B99F25 /* TQPlayerWindow.h */,
-				E040D6441CC0E23100B99F25 /* TQPlayerWindow.m */,
-				E040D63F1CC0E23100B99F25 /* TQPlayerViewController.h */,
-				E040D6401CC0E23100B99F25 /* TQPlayerViewController.m */,
-				E040D6411CC0E23100B99F25 /* TQPlayerViewGestureRecognizer.h */,
-				E040D6421CC0E23100B99F25 /* TQPlayerViewGestureRecognizer.m */,
-			);
-			path = PlayerView;
-			sourceTree = "<group>";
-		};
-		E040D6451CC0E23100B99F25 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				E040D6471CC0E23100B99F25 /* TQPlayerResources.h */,
-				E040D6481CC0E23100B99F25 /* TQPlayerResources.m */,
-				E040D6461CC0E23100B99F25 /* TQPlayer.bundle */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -239,8 +207,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0B02E861CECB9B100FBF992 /* TQPlayer.bundle in Resources */,
 				E040D5DE1CC0DF0F00B99F25 /* LaunchScreen.storyboard in Resources */,
-				E040D6541CC0E23100B99F25 /* TQPlayer.bundle in Resources */,
 				E040D5DB1CC0DF0F00B99F25 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,21 +220,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E040D6521CC0E23100B99F25 /* TQPlayerViewGestureRecognizer.m in Sources */,
-				E040D6551CC0E23100B99F25 /* TQPlayerResources.m in Sources */,
 				E040D5D31CC0DF0F00B99F25 /* AppDelegate.m in Sources */,
-				E040D64C1CC0E23100B99F25 /* TQPlayerCountdownTrigger.m in Sources */,
-				E040D64F1CC0E23100B99F25 /* TQPlayerMiniScreenPanel.m in Sources */,
-				E040D64E1CC0E23100B99F25 /* TQPlayerFullScreenPanel.m in Sources */,
-				E040D6561CC0E23100B99F25 /* TQPlayer.m in Sources */,
-				E040D6501CC0E23100B99F25 /* TQPlayerView.m in Sources */,
-				E040D64B1CC0E23100B99F25 /* TQPlayerBrightness.m in Sources */,
+				E0B02E8E1CECB9B100FBF992 /* TQPlayerResources.m in Sources */,
+				E0B02E8F1CECB9B100FBF992 /* TQPlayerView.m in Sources */,
 				E040D5D01CC0DF0F00B99F25 /* main.m in Sources */,
-				E040D6531CC0E23100B99F25 /* TQPlayerWindow.m in Sources */,
-				E040D6511CC0E23100B99F25 /* TQPlayerViewController.m in Sources */,
+				E0B02E911CECB9B100FBF992 /* TQPlayerViewGestureRecognizer.m in Sources */,
 				E040D6861CC154E100B99F25 /* ShowPlayerViewController.m in Sources */,
-				E069380E1CC3B86600DA7C51 /* TQPlayerReachability.m in Sources */,
-				E040D64D1CC0E23100B99F25 /* TQPlayerHelper.m in Sources */,
+				E0B02E901CECB9B100FBF992 /* TQPlayerViewController.m in Sources */,
+				E0B02E8A1CECB9B100FBF992 /* TQPlayerFullScreenPanel.m in Sources */,
+				E0B02E871CECB9B100FBF992 /* TQPlayer.m in Sources */,
+				E0B02E8B1CECB9B100FBF992 /* TQPlayerHelper.m in Sources */,
+				E0B02E891CECB9B100FBF992 /* TQPlayerCountdownTrigger.m in Sources */,
+				E0B02E881CECB9B100FBF992 /* TQPlayerBrightness.m in Sources */,
+				E0B02E921CECB9B100FBF992 /* TQPlayerWindow.m in Sources */,
+				E0B02E8D1CECB9B100FBF992 /* TQPlayerReachability.m in Sources */,
+				E0B02E8C1CECB9B100FBF992 /* TQPlayerMiniScreenPanel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
