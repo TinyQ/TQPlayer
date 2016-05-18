@@ -1,9 +1,8 @@
-
 Pod::Spec.new do |s|
 	s.name     = 'TQPlayer'
 	s.version  = '0.0.1'
 	s.license  = 'MIT'
-	s.summary  = ''
+	s.summary  = 'A video player base on AVPlayer.'
 	s.homepage = 'https://github.com/tinyq/TQPlayer'
 	s.authors  = { 'qfu' => 'tinyqf@gmail.com' }
 	s.source   = { :git => 'https://github.com/tinyq/TQPlayer.git', :tag => s.version, :submodules => true }
@@ -13,6 +12,7 @@ Pod::Spec.new do |s|
 	s.public_header_files = 'TQPlayer/*.{h}'
 	
 	s.ios.deployment_target = '8.0'
+	s.platform = :ios
 	
 	s.subspec 'PlayerView' do |ss|
 		ss.source_files = 'TQPlayer/PlayerView/*.{h,m}'
@@ -34,5 +34,7 @@ Pod::Spec.new do |s|
 		ss.public_header_files = 'TQPlayer/Resources/*.{h}'
 		ss.resource = 'TQPlayer/Resources/TQPlayer.bundle'
 	end
+	
+	s.frameworks = 'UIKit', 'CoreFoundation'
 end
 
